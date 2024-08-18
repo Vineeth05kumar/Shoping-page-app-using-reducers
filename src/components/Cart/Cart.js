@@ -5,11 +5,11 @@ import { useSelector } from "react-redux";
 
 const Cart = () => {
   const items = useSelector((state) => state.cart.items);
-  const cartStatus = useSelector((state) => state.cart.cartStatus);
+  // const cartStatus = useSelector((state) => state.cart.cartStatus);
 
-  if (!cartStatus) {
-    return null; // Don't render if cart is hidden
-  }
+  // if (!cartStatus) {
+  //   return null; // Don't render if cart is hidden
+  // }
 
   return (
     <Card className={classes.cart}>
